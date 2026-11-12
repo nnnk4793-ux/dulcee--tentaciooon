@@ -1,0 +1,13 @@
+DULCE TENTACIÓN — SITIO WEB
+
+Archivos:
+- index.html: estructura de la página.
+- styles.css: diseño y adaptación a celulares, tabletas y computadoras.
+- script.js: carrito, cantidades, pedidos por WhatsApp y formulario de correo.
+- imagenes/: fotografías del menú y galería.
+
+IMPORTANTE:
+1. Mantén la carpeta "imagenes" junto a index.html, styles.css y script.js.
+2. Abre index.html en Chrome para probar la página.
+3. Para publicarla en GitHub Pages, sube TODO el contenido de esta carpeta al directorio raíz del repositorio.
+4. El botón de WhatsApp prepara el pedido y abre WhatsApp. El formulario de contacto abre el correo del visitante con el mensaje preparado; no envía correos automáticamente porque eso requiere un servicio externo o servidor.

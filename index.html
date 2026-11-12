@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#603923">
+  <meta name="description" content="Dulce Tentación: capuchino frío con fresas, crema y galletas Oreo en Oruro, Bolivia.">
+  <title>Dulce Tentación | Capuchinos especiales</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio">☕ Dulce <span>Tentación</span> ♡</a>
+    <nav class="nav" aria-label="Menú principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#galeria">Galería</a>
+      <a href="#menu">Menú</a>
+      <a href="#carrito">Carrito 🛒</a>
+      <a href="#promociones">Promociones</a>
+      <a href="#contactos">Contactos</a>
+      <a href="#llamadas">Llamar</a>
+      <a href="#ubicacion">Ubicación</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-inner">
+        <span class="eyebrow">Capuchino frío · Frutas · Galletas Oreo</span>
+        <h1>Dulce Tentación</h1>
+        <p>Una deliciosa combinación de capuchino, fresas, crema y galletas Oreo. Un antojo especial para disfrutar y compartir.</p>
+        <a class="button" href="#menu">Descubre nuestro menú ♡</a>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2 class="section-title">Nuestra dulce propuesta</h2>
+      <p>
+        Dulce Tentación es un emprendimiento que ofrece capuchino frío con fresas y galletas Oreo.
+        Buscamos combinar el sabor del café con la frescura de la fruta y el toque dulce de las galletas,
+        cuidando la preparación, la higiene y la presentación de cada vaso. Queremos que nuestros clientes
+        disfruten una bebida rica, cremosa y diferente.
+      </p>
+    </section>
+
+    <section id="menu">
+      <h2 class="section-title">Nuestro menú</h2>
+      <p class="section-subtitle">Elige tu favorito y disfruta una experiencia dulce. ¡Todos preparados con mucho cariño!</p>
+      <div class="product-grid">
+        <article class="product-card">
+          <img class="product-image" loading="lazy" decoding="async" src="imagenes/capuchino-tentacion.jpg" alt="Capuchino frío con fresa, crema, chocolate y galletas Oreo">
+          <div class="product-content">
+            <h3>Capuchino Tentación</h3>
+            <p>Capuchino frío con fresa, crema, chocolate y trocitos de galleta Oreo.</p>
+            <span class="price">Bs 17,50</span>
+            <button class="add-button" onclick="addToCart('Capuchino Tentación',17.50)">Agregar al carrito</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <img class="product-image" loading="lazy" decoding="async" src="imagenes/capuchino-fresa.jpg" alt="Capuchino frío de fresa con crema y fresas naturales">
+          <div class="product-content">
+            <h3>Capuchino de Fresa</h3>
+            <p>Capuchino frío con el sabor de la fresa, crema suave y fruta fresca.</p>
+            <span class="price">Bs 15,00</span>
+            <button class="add-button" onclick="addToCart('Capuchino de Fresa',15)">Agregar al carrito</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <img class="product-image" loading="lazy" decoding="async" src="imagenes/capuchino-oreo.jpg" alt="Capuchino frío con crema y galletas Oreo">
+          <div class="product-content">
+            <h3>Capuchino Oreo</h3>
+            <p>Capuchino frío con crema y galletas Oreo trituradas para un toque crujiente.</p>
+            <span class="price">Bs 14,50</span>
+            <button class="add-button" onclick="addToCart('Capuchino Oreo',14.50)">Agregar al carrito</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <img class="product-image" loading="lazy" decoding="async" src="imagenes/capuchino-choco-fresa.jpg" alt="Capuchino frío de chocolate y fresa">
+          <div class="product-content">
+            <h3>Capuchino Choco-Fresa</h3>
+            <p>Capuchino frío con chocolate, fresa y una presentación cremosa y especial.</p>
+            <span class="price">Bs 13,50</span>
+            <button class="add-button" onclick="addToCart('Capuchino Choco-Fresa',13.50)">Agregar al carrito</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="galeria">
+      <h2 class="section-title">Nuestra galería</h2>
+      <p class="section-subtitle">Un vistazo a los sabores y momentos dulces de Dulce Tentación.</p>
+      <div class="gallery-grid">
+        <img loading="lazy" decoding="async" src="imagenes/galeria-fresa.jpg" alt="Variación de capuchino con fresa">
+        <img loading="lazy" decoding="async" src="imagenes/galeria-oreo.jpg" alt="Variación de capuchino con Oreo">
+        <img loading="lazy" decoding="async" src="imagenes/galeria-chocolate.jpg" alt="Capuchino con chocolate">
+        <img loading="lazy" decoding="async" src="imagenes/galeria-choco-fresa.jpg" alt="Capuchino con chocolate y fresa">
+      </div>
+    </section>
+
+    <section class="promo" id="promociones">
+      <h2>¡Endulza tu día!</h2>
+      <p>Pregunta por nuestras promociones y combos disponibles. Café, frutas y galletas en una sola tentación.</p>
+      <a class="button" href="#menu">Ver productos</a>
+    </section>
+
+    <section id="carrito">
+      <h2 class="section-title">Tu carrito de compras 🛒</h2>
+      <p class="section-subtitle">Revisa tus productos y envía tu pedido por WhatsApp.</p>
+      <div class="cart-wrap">
+        <div id="cartItems" class="cart-empty">Tu carrito está vacío. ¡Agrega algo delicioso!</div>
+        <div id="cartTotal" class="cart-total">Total: Bs 0</div>
+        <button class="button dark" type="button" onclick="sendOrder()">Enviar pedido por WhatsApp</button>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contactos">
+      <h2 class="section-title">Contáctanos ♡</h2>
+      <p class="section-subtitle">Escríbenos tus consultas, sugerencias o pedidos. El mensaje se preparará para enviarlo a nuestro correo.</p>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Envíanos un mensaje</h3>
+          <form id="contactForm">
+            <label for="customerName">Tu nombre</label>
+            <input id="customerName" type="text" placeholder="Escribe tu nombre" required>
+            <label for="customerEmail">Tu correo electrónico</label>
+            <input id="customerEmail" type="email" placeholder="tunombre@correo.com" required>
+            <label for="customerMessage">Tu mensaje</label>
+            <textarea id="customerMessage" placeholder="¿En qué podemos ayudarte?" required></textarea>
+            <button class="button dark" type="submit">Preparar correo</button>
+          </form>
+        </div>
+
+        <div class="contact-card" id="llamadas">
+          <h3>Información de contacto</h3>
+          <p class="contact-line">📞 Teléfono: <a id="phoneText" href="#">+591 71856626</a></p>
+          <p class="contact-line">✉️ Correo: <a id="emailText" href="#">mendozacruzalejandro7@gmail.com</a></p>
+          <p class="contact-line">📍 Dirección: Parque de la Unión Nacional, Oruro, Bolivia.</p>
+          <a class="button dark" id="callButton" href="tel:+59171856626">Llamar ahora</a>
+          <br>
+          <a class="button" id="whatsappButton" href="#" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="ubicacion">
+      <h2 class="section-title">¿Dónde encontrarnos?</h2>
+      <p class="section-subtitle">Visítanos en el Parque de la Unión Nacional, Oruro, Bolivia.</p>
+      <div class="map-card">
+        <iframe class="map-frame"
+          src="https://www.google.com/maps?q=Parque%20de%20la%20Uni%C3%B3n%20Nacional%2C%20Oruro%2C%20Bolivia&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa de Parque de la Unión Nacional, Oruro"></iframe>
+        <a class="button dark" href="https://maps.app.goo.gl/CzhXWRqBCYHVcuJR8?g_st=ac" target="_blank" rel="noopener">Abrir ubicación en Google Maps</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <h2>Dulce Tentación ☕♡</h2>
+    <p>Capuchino frío con fresas y galletas Oreo.</p>
+    <p>Un sabor especial en cada momento.</p>
+    <p>© 2026 Dulce Tentación. Todos los derechos reservados.</p>
+    <p><a href="mailto:mendozacruzalejandro7@gmail.com">Contáctanos por correo</a></p>
+  </footer>
+
+  <div class="notice" id="notice" role="status" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
